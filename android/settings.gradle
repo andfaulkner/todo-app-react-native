@@ -1,0 +1,3 @@
+rootProject.name = 'ToDoReactNative'
+
+include ':app'
