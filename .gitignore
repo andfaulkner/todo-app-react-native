@@ -1,9 +1,53 @@
 # OSX
-#
 .DS_Store
 
-# Xcode
-#
+# node.js
+node_modules/
+
+# Bundle artifact
+*.jsbundle
+
+# Test coverage
+.nyc_output
+coverage/
+lib-cov/
+
+# Logs
+log/
+logs
+*.log
+logfile
+certbot.log
+npm-debug.log
+yarn-error.log
+
+########## TEMP ##########
+# Temporary files
+temp/
+temp/**
+!/*/**/*temp*
+**/cache/**
+
+# Local trash dir for code
+**/doc/old_code/**
+doc/old_code
+
+# Backups
+.bk
+
+########## IDEs ##########
+# vim swapfile
+*.swp
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# VSCode
+.vscode
+.awcache
+
+# XCode
 build/
 *.pbxuser
 !default.pbxuser
@@ -23,19 +67,13 @@ DerivedData
 project.xcworkspace
 
 # Android/IntelliJ
-#
 build/
 .idea
 .gradle
 local.properties
 *.iml
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
-
+########## MISC ##########
 # BUCK
 buck-out/
 \.buckd/
@@ -47,10 +85,6 @@ buck-out/
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
-
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
-
-# Bundle artifact
-*.jsbundle
